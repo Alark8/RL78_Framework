@@ -1,0 +1,68 @@
+Renesas Optimizing Linker (W3.02.00 )             22-Jan-2021 16:37:38
+
+*** Options ***
+
+-subcommand=LinkerTestProject.tmp
+-device="C:\Renesas\e2_studio\DebugComp\\RL78\RL78\Common\DR5F10CGB.DVF"
+-list="TestProject.map"
+-nooptimize
+-auto_section_layout
+-security_id=0
+-input=".\generate\cstart.obj"
+-input=".\generate\hdwinit.obj"
+-input=".\generate\stkinit.obj"
+-input=".\src\ADC.obj"
+-input=".\src\FuelControl.obj"
+-input=".\src\FuelManage.obj"
+-input=".\src\GPIO.obj"
+-input=".\src\main.obj"
+-input=".\src\utils.obj"
+-library="C:\Program Files (x86)\Renesas\RL78\1_9_0\lib\rl78cm4s.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_9_0\lib\rl78cm4r.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_9_0\lib\malloc_n.lib"
+-output="TestProject.abs"
+-debug
+-nocompress
+-memory=high
+-rom=.data=.dataR,.sdata=.sdataR
+-nomessage
+-nologo
+
+*** Error information ***
+
+W0561520:"user option byte" in ".option_byte" created by device file
+W0561520:"on chip debug" in ".option_byte" created by device file
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.data
+                                  00000080  00000091        12   2
+.sdata
+                                  00000092  00000092         0   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.constf
+                                  000000ce  00000131        64   2
+.text
+                                  00000132  0000018b        5a   1
+.textf
+                                  0000018c  00000497       30c   1
+.RLIB
+                                  00000498  00000ab4       61d   1
+.SLIB
+                                  00000ab5  000012c1       80d   1
+.const
+                                  00003000  00003000         0   2
+.bss
+                                  000ff700  000ff825       126   2
+.dataR
+                                  000ff826  000ff837        12   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2

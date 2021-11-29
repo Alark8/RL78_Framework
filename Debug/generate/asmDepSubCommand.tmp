@@ -1,0 +1,7 @@
+-asmopt=-MM
+-asmopt=-MP
+-cpu=S2
+-c
+-dev="C:\Renesas\e2_studio\DebugComp\\RL78\RL78\Common\DR5F10CGB.DVF"
+-character_set=utf8
+-g

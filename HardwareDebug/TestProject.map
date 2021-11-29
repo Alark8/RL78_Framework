@@ -1,0 +1,104 @@
+Renesas Optimizing Linker (W3.02.00 )             22-Nov-2021 16:35:02
+
+*** Options ***
+
+-subcommand=LinkerTestProject.tmp
+-device="C:\Renesas\e2_studio\DebugComp\\RL78\RL78\Common\DR5F10DPJ.DVF"
+-library="D:\Alark\e2_Workspace\TestProject\src\eel.lib"
+-library="D:\Alark\e2_Workspace\TestProject\src\fdl.lib"
+-list="TestProject.map"
+-nooptimize
+-entry=_start
+-auto_section_layout
+-security_id=0
+-debug_monitor=3FE00-3FFFF
+-user_opt_byte=4EFFEB
+-input=".\generate\cstart.obj"
+-input=".\generate\hdwinit.obj"
+-input=".\generate\stkinit.obj"
+-input=".\src\adc.obj"
+-input=".\src\adcconfig.obj"
+-input=".\src\adccontrol.obj"
+-input=".\src\clock.obj"
+-input=".\src\clockconfig.obj"
+-input=".\src\clockcontrol.obj"
+-input=".\src\displayitems.obj"
+-input=".\src\eeprom.obj"
+-input=".\src\fuelcontrol.obj"
+-input=".\src\fuelmanage.obj"
+-input=".\src\gpio.obj"
+-input=".\src\interrupt.obj"
+-input=".\src\interruptconfig.obj"
+-input=".\src\intervaltimer.obj"
+-input=".\src\intervaltimerconfig.obj"
+-input=".\src\lcdsegment.obj"
+-input=".\src\lcdsegmentconfig.obj"
+-input=".\src\lcdsegmentcontrol.obj"
+-input=".\src\main.obj"
+-input=".\src\rtc.obj"
+-input=".\src\rtcconfig.obj"
+-input=".\src\rtccontrol.obj"
+-input=".\src\timeconfig.obj"
+-input=".\src\timer.obj"
+-input=".\src\timercontrol.obj"
+-input=".\src\utils.obj"
+-library="C:\Program Files (x86)\Renesas\RL78\1_9_0\lib\rl78cm4s99.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_9_0\lib\rl78cm4r.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_9_0\lib\malloc_n.lib"
+-output="TestProject.abs"
+-debug
+-nocompress
+-memory=high
+-rom=.data=.dataR,.sdata=.sdataR
+-nomessage
+-nologo
+
+*** Error information ***
+
+W0561520:"on chip debug" in ".option_byte" created by device file
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.sdata
+                                  00000080  00000080         0   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.constf
+                                  000000d8  0000013f        68   2
+.data
+                                  00000140  000001bf        80   2
+.text
+                                  000001c0  00000243        84   1
+EEL_CODE
+                                  00000244  00000cb8       a75   2
+FDL_CODE
+                                  00000cba  00000edd       224   2
+.RLIB
+                                  00000ede  000015f0       713   1
+.SLIB
+                                  000015f1  00001dfd       80d   1
+.const
+                                  00003000  0000301f        20   2
+.textf
+                                  00003020  000059bc      299d   1
+.monitor2
+                                  0003fe00  0003ffff       200   1
+.bss
+                                  000fbf00  000fc029       12a   2
+.dataR
+                                  000fc02a  000fc0a9        80   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2
+EEL_SDAT
+                                  000ffe20  000ffe20         1   2
+FDL_SDAT
+                                  000ffe22  000ffe23         2   2

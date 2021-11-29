@@ -1,0 +1,9 @@
+-cpu=S2
+-c
+-dev="C:\Renesas\e2_studio\DebugComp\\RL78\RL78\Common\DR5F10DPJ.DVF"
+-I "C:\Program Files (x86)\Renesas\RL78\1_9_0\inc"
+-I "D:\Alark\e2_Workspace\TestProject\generate"
+-I "D:\Alark\e2_Workspace\TestProject\inc" 
+-character_set=utf8
+-lang=c99
+-g
